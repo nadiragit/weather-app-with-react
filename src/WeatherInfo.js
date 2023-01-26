@@ -20,7 +20,7 @@ export default function WeatherInfo(props) {
               <WeatherIcon code={props.data.icon} size={52} />
             </div>
             <div className="float-left">
-              <WeatherTemperature celsius={props.data.temperature} />
+              <WeatherTemperature fahrenheit={props.data.temperature} />
             </div>
           </div>
         </div>
@@ -28,7 +28,7 @@ export default function WeatherInfo(props) {
           <ul>
             <li>Humidity: {props.data.humidity}%</li>
             <li>Wind: {props.data.wind}km/h</li>
-            <li>Feels Like: {Math.round(props.data.feels)}°C</li>
+            <li>Feels Like: {Math.round(props.data.feels)}°F</li>
           </ul>
         </div>
       </div>
